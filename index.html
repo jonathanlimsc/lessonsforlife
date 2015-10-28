@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     -->
+
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,300,600' rel='stylesheet' type='text/css'>
 
@@ -51,7 +52,7 @@
 
 <div id="nav_wrapper">
 
-    <div class="nav_container">
+    <nav class="nav_container">
         <a class="brand" href="index.html"></a>
         <ul>
             <!-- li><a href="/">Home</a></li -->
@@ -60,6 +61,13 @@
             <li><a href="our_story.html">Our Story</a></li>
             <!-- li><a href="#press">Press</a></li -->
             <li><a href="our_program.html">Our Program</a>
+                <div>
+                    <ul class="nested-nav">
+                        <li><a href="our_program.html#where">How far we've come</a></li>
+                        <li><a href="our_program.html#achievement">What we've achieved</a></li>
+                        <li><a href="our_program.html#how-it-works">How it works</a></li>
+                    </ul>
+                </div>
             </li>
             <li><a href="#impact">Impact</a></li>
             <li><a href="our_team.html">Our Team</a></li>
@@ -74,7 +82,7 @@
             <li><a href="follow_us.html">Follow Us</a></li>
             -->
         </ul>
-    </div>
+    </nav>
 </div>
 
 <section id="section_one">
@@ -89,9 +97,8 @@
                         <h1>Music should be free</h1>
                         <h2>We provide instruments and tutors so it can be.</h2>
                         <div id="button_container">
-                            <a class="title_button video fancybox" href="our_program.html">How it works</a>
+                            <a class="title_button video fancybox" href="our_program.html#how-it-works">How it works</a>
                             <a class="title_button donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GJLMUD4UU2YH8" target="_blank">Donate</a>
-
                         </div>
 
                         <div class="sharing-container">

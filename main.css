@@ -86,6 +86,11 @@ em {
  *_____________________________________ Page 1: Navigation _____________________ 
  */
 
+nav {
+  overflow: hidden;
+  display: block;
+}
+
 #nav_wrapper {
   position: fixed;
   background-color: white;
@@ -140,6 +145,41 @@ li a:hover {
   color: #ffc000;
   border-top: 5px solid #ffc000;
   padding-top: 24px;
+}
+
+nav > ul > li > div {
+  display: none;
+  opacity: 0;
+  position: absolute;
+
+}
+
+nav > ul > li:hover > div {
+  display: block;
+  opacity: 1;
+  background: rgba(255,255,255,1);
+}
+
+.nested-nav > li {
+  padding: 0;
+  display: block;
+  text-align: left;
+  margin: 0 auto;
+  float: none;
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 4px;
+}
+
+.nested-nav > li:hover {
+  color: #ffc000;
+  border-left: 5px solid #ffc000;
+  border-top: 0px;
+  padding-left:3px;
+}
+
+.nested-nav > li a:hover{
+  border: none;
 }
 
 /*
@@ -699,9 +739,6 @@ b.vision {
   font-size: 1.3em;
 }
 
-
-
-
 .where-we-are .testimonial.large p {
   padding-top: 0;
   font-size: 1.5em;
@@ -714,8 +751,15 @@ b.vision {
 
 }
 
+.what-we-achieved h3 {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  font-size: 2.9em;
+}
 
-.what-we-achieved p { width: 600px; margin: 30px auto ;}
+.what-we-achieved p {
+  width: 600px; margin: 30px auto;
+}
 .what-we-achieved { margin: 50px auto;}
 
 

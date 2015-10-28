@@ -30,13 +30,21 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 
     <div id="nav_wrapper">
-        <div class="nav_container">
+        <nav class="nav_container">
             <a class="brand" href="index.html"></a>
             <ul>
                 <li><a href="index.html#donate">Donate</a></li>
                 <li><a href="index.html#mission">About</a></li>
                 <li><a href="our_story.html">Our Story</a></li>
-                <li><a href="our_program.html">Our Program</a></li>
+                <li><a href="our_program.html">Our Program</a>
+                    <div>
+                        <ul class="nested-nav">
+                            <li><a href="#where">How far we've come</a></li>
+                            <li><a href="#achievement">What we've achieved</a></li>
+                            <li><a href="#how-it-works">How it works</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="index.html#impact">Impact</a></li>
                 <li><a href="our_team.html">Our Team</a></li>
                 <li><a href="prospective_tutors.html">Prospective Tutors</a></li>
@@ -47,7 +55,7 @@
                         <li> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GJLMUD4UU2YH8">Donate</a></li> -->
 
             </ul>
-        </div>
+        </nav>
     </div>
     <div id="section_two" class="content_table even_section">
         <div class="content_cell">
@@ -63,11 +71,10 @@
                                         <p>We are expanding our efforts in San Francisco. In February, we launched a violin program at <a href="https://www.demarillac.org/" target="_blank">De Marillac Academy</a> in the Tenderloin, matching instructors from San Francisco University High School and Saint Ignatius College Preparatory with the socioeconomically disadvantaged students De Marillac Academy serves. This summer, we will be continuing our work at De Marillac Academy and launching a guitar program at <a href="http://www.siprep.org/page.cfm?p=6821" target="_blank">Saint Ignatius Magis Program</a></p>
 
                                     </div>
-                                    <div class="clear"></div>
-
-                                    <h3 style="margin-top: 70px ; margin-bottom: 40px ; font-size: 2.9em">What we've achieved so far</h3>
+                                    <div class="clear" id="achievement"></div>
 
                                     <div class="what-we-achieved">
+                                        <h3>What we've achieved so far</h3>
                                         <img src="images/what-we-achieved.png" alt="Our achievements" /><br />
                                         <p>We currently provide free music lessons for <b>De Marillac Academy students in San Francisco for children from underserved, low income families in the Tenderloin and other at-risk communities in San Francisco.</b></p>
 
