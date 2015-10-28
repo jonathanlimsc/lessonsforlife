@@ -1,0 +1,773 @@
+/*
+ *_____________________________________ Page 0: Global _________________________ 
+ */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body, section {
+  height: 100%;
+  width: 100%;
+  min-height: 600px;
+  min-width: 600px;
+}
+
+body {  
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+#overlay {
+  background-color: rgba(136, 136, 136, 0.7);
+  height: 100%;
+}
+
+.content_table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.content_cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.content-block {
+  text-align: center;
+}
+
+.content-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.content-unit {
+  margin: 100px 0 150px;
+}
+
+h3 {
+  line-height: 1.25;
+  margin-bottom: 70px;
+  font-size: 3.2em;
+  font-weight: 100;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.8em;
+  margin: 0 0 10px;
+  text-align: left;
+}
+
+em {
+  color: #ffc000;
+  font-style: normal;
+}
+
+.odd_section {
+  height: 70%;
+}
+
+.even_section h3 {
+  color: #333333;
+  height: 50%
+}
+
+.even_section p {
+  color: #6e6e6e;
+}
+
+
+/*
+ *_____________________________________ Page 1: Navigation _____________________ 
+ */
+
+#nav_wrapper {
+  position: fixed;
+  background-color: white;  
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav_container {
+  max-width: 1100px;
+  min-width: 700px;
+  margin: 0 auto;
+}
+
+#nav:after {
+  content:'';
+  display:block;
+  clear: both;
+}
+
+.clear {clear: both;}
+
+.brand {
+  float: left;
+  background: url('images/lessons-logo-gray.png') no-repeat center;
+  background-size: contain;
+  width: 250px;
+  height: 78px;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 78px;
+  float: right;
+  display: table-row;
+}
+
+li {
+  float: left;
+  padding-right: 0px; 
+  padding-left: 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #6e6e6e;
+}
+
+li a:hover {
+  color: #ffc000;
+  border-top: 5px solid #ffc000;
+  padding-top: 24px;
+}
+
+/*
+ *_____________________________________ Page 1: Cover __________________________ 
+ */
+
+
+.vision h3,
+.mission h3 {
+  text-align: left;
+}
+
+.vision p {
+  font-size: 2em;
+  line-height: 1.7em;
+  width: 77%;
+  text-align: center;
+  margin: auto;
+  padding: 40px 80px 61px;
+  border: solid 2px #FFF757;
+}
+
+.vision p strong {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.mission { 
+  background-color: white; 
+  padding: 1px 0;
+}
+
+.mission h3,
+.mission p
+ {
+  color: #333 !important;
+}
+
+.mission h3 { 
+  margin-bottom: 30px;
+}
+
+.video {
+  width: 100%;
+}
+.video>iframe {
+  width: 78%;
+  height:555px;
+}
+
+.press {
+  background: linear-gradient(rgba(0, 0, 0, 0.55),
+  rgba(0, 0, 0, 0.55)), url(images/press.jpg) no-repeat;
+  width: 100%;
+  height: 585px;
+  background-position: center;
+  display: flex;
+  margin-top: 150px;
+}
+
+.press .content-container {
+  margin: auto;
+  align-self: center;
+}
+.press p {
+  text-align: center;
+  color: white;
+}
+
+.press h3 {
+  color: white;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.press .img-container {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 370px;
+  height: 82px;
+  margin: 50px auto 0px;
+
+}
+
+.press .img-container:hover{
+  border: solid;
+  padding-top: 19px;
+  padding-bottom: 9px;
+  border-width: 1px;
+  border-color: white;
+
+}
+
+.our-supporters{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)), url(images/codysimpson.jpg) no-repeat;
+  background-position: center;
+  width: auto;
+  height: 857px;
+  padding: 1px;
+}
+
+.our-supporters h3, .our-supporters p{
+  color: white;
+}
+
+.our-supporters h3 {
+  height: 10%;
+}
+
+.our-supporters p {
+  font-size: 2.0em;
+  line-height: 1.5em;
+  padding-top: 333px;
+  width: 60%;
+  text-align: center;
+  margin: auto auto;
+}
+
+.our-supporters a {
+  color: #fbb700;
+}
+
+.our-supporters a:hover {
+  text-decoration: underline;
+}
+
+.center-content {
+  margin-top: 100px;
+  height: 100%
+}
+
+.how-works {
+  background: rgb(90, 86, 102) url(images/cover.jpg) no-repeat;
+  background-size: cover;
+  padding: 1px 0;
+}
+
+.how-works h3 {
+  color: white !important
+}
+
+.how-works p {
+  font-size: 1.7em;
+  line-height: 1.5em;
+  padding-bottom: 2em;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: white !important
+}
+
+.what-need p {
+  font-size: 1.7em;
+  line-height: 1.5em;
+  padding-bottom: 2em;
+  width: 85%;
+  text-align: left;
+  margin: auto;
+}
+
+.what-need img { float: left; margin-right: 50px;}
+
+.why-started p {
+  font-size: 1.7em;
+  line-height: 1.5em;
+  padding-bottom: 1em;
+  width: 100%;
+  text-align: left;
+  margin: auto;
+}
+
+.why-started p a {
+  color: blue;
+  border-bottom: solid 1px blue;
+}
+
+.why-started b {
+
+  margin-bottom: 16px;
+  display: block;
+  font-size: 26px;
+  color: #333;
+}
+
+.why-started span {
+  padding-left: 30px;
+  display: block;
+}
+
+.impact_blurb {
+  font-size: 2em;
+  line-height: 1.7em;
+  width: 85%;
+  text-align: center;
+  margin: auto;
+}
+
+.large-icon { 
+  border-radius: 50%;
+  background: rgba(186, 223, 255, 0.75);
+  padding: 50px 75px 100px;
+  width: 129px;
+  height: 129px;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+}
+
+.large-icon img {
+  height: 106px ;
+  width: 129px;
+  margin-bottom: 10px;
+}
+
+.large-icon span {
+  display: block;
+  width: 129px;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+
+}
+
+
+#section_one {
+  /* background: #f5f5f5 url('cover.jpg') bottom; */
+  background: #f5f5f5 url('images/main-bg.jpg') top; 
+  background-size: cover;
+  min-height: 800px;
+  min-width: 800px
+}
+
+#title_cell h1 {
+  line-height: 1;
+  font-weight: 300;
+  font-size: 7em;
+  color: white;
+  letter-spacing: -0.01em;
+}
+
+#title_cell h2 {
+  margin: 1em 0em 0.2em !important;
+  line-height: 1.35 !important;
+  font-size: 3.2em !important;
+  letter-spacing: 0.0em;
+  font-weight: 300;
+  color: white;
+}
+
+#button_container {
+  padding: 3em 3em;
+}
+
+.title_button, #contact_button {
+  background-color: #ffc000;
+  color: #ffffff;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  margin: 0 12px;
+  vertical-align: middle;
+}
+
+.share { background: transparent; border: solid 2px white;}
+
+.sharing-container { 
+display: block;
+height: 51px;
+margin: 0 auto;
+width: 374px;
+padding: 31px 0 17px;
+position: relative;
+}
+
+
+
+.sharing-container a {
+  margin: 0 20px;
+}
+
+.sharing-container  span {
+  color: white;
+  display: block;
+  margin: 0 0 15px; text-align:center;
+}
+
+#donate_button {
+  background-color: #ffc000;
+  color: #ffffff;
+  padding: 1.0em 2.0em;
+  font-size: 1.50em;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.title_button:hover, #contact_button:hover, #donate_button:hover {
+  background-color: #e6ad00;
+}
+
+.share:hover { background: rgba(255,255,255,0.5)}
+
+#scroll {
+  font-size: 22px;
+  top: 150px;
+  font-weight: 100;
+  z-index: 0;
+}
+
+#partner_footer {
+  background-color: rgba(255, 255, 255, .9);  
+  height: 50px;
+  display:table-row;
+  vertical-align: bottom;
+}
+
+#partner_container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#chapman_logo {
+  background: url('images/chapman_logo.gif') center center no-repeat;
+  background-size: contain;
+  height: 75px;
+  width: 150px;
+  float: left;
+}
+
+#university_logo {
+  background: url('university-high-logo.png') center center no-repeat;
+  background-size: contain;
+  height: 75px;
+  width: 150px;
+  float: right;
+}
+
+.schools,
+.what-need,
+.why-started {
+  border-top: solid 1px #ccc;
+}
+
+.schools img {
+  margin: 0 30px;
+}
+
+#de_marillac_logo {
+  background: url('images/de_marillac_logo.jpg') center center no-repeat;
+  background-size: contain;
+  height: 75px;
+  width: 150px;
+  float: right;
+}
+
+#st_ignatius_logo {
+  background: url('st_ignatius_logo.jpg') center center no-repeat;
+  background-size: contain;
+  height: 75px;
+  width: 150px;
+  float:left;
+}
+
+#urban_logo {
+  background: url('urban_logo.jpg') center center no-repeat;
+  background-size: contain;
+  height: 75px;
+  width: 150px;
+}
+.image12 img {
+  width: 470px;
+  height: 266px;
+}
+
+
+#where p a {
+  color: blue;
+  border-bottom: solid 1px blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *_____________________________________ Page 2 & 4: Images _____________________ 
+ */
+
+
+
+
+
+
+.testimonial.small {
+  width: 47%; float: left;
+}
+
+.testimonial.large {
+  
+}
+
+
+.testimonial img {
+  border-radius: 50%;
+  float: left;
+}
+
+.testimonial.large img {
+
+  margin: 0 50px 80px 10px;
+  height: 250px;
+  width: 250px;
+}
+
+
+.testimonial.small img {
+
+  margin: 0 25px 0;
+  height: 150px;
+  width: 150px;
+}
+
+.testimonial.large p {
+
+  font-size: 2em;
+  line-height: 1.5em;
+  padding: 2.4em 0;
+
+}
+
+.testimonial.small p {
+  font-size: 14px;
+}
+
+#violin_image {
+  height: 300px;
+  width: 190px;
+  background: url('violin.jpg') center;
+  background-size: cover;
+  float: left;
+  margin: 0 70px 0 auto;
+}
+
+#sonya-portrait img {
+  height: 250px;
+  width: 250px;
+  float: left;
+  margin: 0 70px 60px auto;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+#girl_with_violin {
+  height: 300px;
+  width: 300px;
+  background: url('images/girl-playing.jpg') center;
+  background-size: cover;
+  float: right;
+  margin: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#sonya_shadan {
+  height: 150px;
+  width: 114px;
+  background: url('sonya_shadan.jpg') center;
+  background-size: cover;
+  float: left;
+  margin-right: 100px;
+}
+/*.image1 img {
+  width: 250px;
+  height: 310px;
+
+}*/
+.team-img img {
+  width: 87%;
+}
+.team-img1 img {
+  width: 65%;
+  border-radius: 50%;
+}
+.story-img img {
+      width: 340px;
+    height: 340px;
+  border-radius: 50%;
+  float: left;
+  margin: 0px 45px 15px 0px;
+}
+.story-img {
+  float: left;
+}
+
+.our-story p {
+  font-size: 1.5em;
+}
+
+.story-text {
+  width: 36%;
+  clear: both;
+  float: left;
+}
+.team-img {
+  width: 35%;
+  float: right;
+}
+.team-img1 {
+  width: 35%;
+  float: right;
+}
+.tutores-img img {
+  width: 500px;
+  float: right;
+  margin: 20px 0px 20px 40px;
+}
+p.team-text {
+  font-size: 1.5em;
+}
+b.vision {
+  font-size: 40px;
+}
+.addthis_toolbox.addthis_vertical_style {
+    left: 0;
+    position: absolute!important;
+}
+.story-grow {
+    margin-bottom: 50px !important;
+}
+.story-p {
+    margin-bottom: 50px;
+}
+.story-still {
+    margin-bottom: 50px !important;
+}
+.lesson {
+    margin-bottom: 50px !important;
+}
+.tech {
+    margin: 30px 0 !important;
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+
+
+
+.where-we-are .testimonial.large p {
+  padding-top: 0;
+  font-size: 1.5em;
+}
+
+
+
+.where-we-are .testimonial.large img {
+  margin: 0 10px 20px 0px;
+
+}
+
+
+.what-we-achieved p { width: 600px; margin: 30px auto ;}
+.what-we-achieved { margin: 50px auto;}
+
+
+.testimonial.large div {
+  float:left;
+    width: 330px;
+}
+
+.testimonial.large div span {
+  display: block;
+  float: left;
+  clear: left;
+  width: 250px;
+}
+
+  
+/*
+ *_____________________________________ Page 6: Footer _________________________ 
+ */
+
+footer { 
+  background-color: rgb(27, 27, 27);
+  text-align: center; 
+  color: #d5d5d5;
+  font-weight: 300;
+  display: table-row;
+  height: 50px;
+}
+
+#footer_container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+h6 {
+  font-size: .75em;
+  font-weight: 300;
+  line-height: 50px;
+}
+
+
+
+.addthis_toolbox.addthis_vertical_style span.addthis_follow_label {
+  display: block;
+  color: #fff !important;
+}
+
+
+#donate_button {
+  background-color: #ffc000;
+  color: #ffffff;
+  padding: 1.0em 2.0em;
+  font-size: 1.50em;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+.addthis_toolbox.addthis_default_style.addthis_32x32_style {
+  margin: -14px 20px;
+ 
+}
